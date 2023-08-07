@@ -1,0 +1,32 @@
+{
+	"name": "scratch-sr",
+  "description": "Scratch is a package designed to simplify the process of rendering React applications using Server-Side Rendering (SSR) and client-side rendering.",
+	"version": "1.0.0-beta.1",
+	"main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+	"author": "Djemai Samy",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"start": "node ./bin/index.js",
+		"dev": "ts-node-dev --poll ./src/index.ts",
+		"watch": "rimraf ./lib && tsc -watch -p ./",
+    "build":"tsc",
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-helmet": "^6.1.0",
+		"react-router-dom": "^6.14.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.4.5",
+		"@types/react": "^18.2.17",
+		"@types/react-dom": "^18.2.7",
+		"@types/react-helmet": "^6.1.6",
+		"@types/webpack": "^5.28.1",
+		"@types/webpack-env": "^1.18.1",
+		"typescript": "^5.1.6"
+	}
+}
