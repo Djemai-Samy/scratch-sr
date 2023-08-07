@@ -1,0 +1,13 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist",
+    "module": "ES2020",
+    "target": "es6",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext"
+  },
+  "include": ["src", "src/index.ts"]
+}
